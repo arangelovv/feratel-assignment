@@ -1,0 +1,64 @@
+// This code represents a shopping cart implementation that allows adding items, removing items, 
+// calculating the total cost, displaying the items, and simulating the checkout process.
+// However, it can be refactored to improve its structure, readability, and maintainability.
+
+class ShoppingCart {
+    private items: CartItem[];
+  
+    constructor() {
+      this.items = [];
+    }
+  
+    public addItem(name: string, price: number, quantity: number): void {
+      const newItem: CartItem = {
+        name,
+        price,
+        quantity,
+      };
+      this.items.push(newItem);
+    }
+  
+    public removeItem(index: number): void {
+      if (index >= 0 && index < this.items.length) {
+        this.items.splice(index, 1);
+      }
+    }
+  
+    public calculateTotal(): number {
+      let total = 0;
+      for (const item of this.items) {
+        total += item.price * item.quantity;
+      }
+      return total;
+    }
+  
+    public displayItems(): void {
+      console.log("Shopping Cart:");
+      for (let i = 0; i < this.items.length; i++) {
+        const item = this.items[i];
+        console.log(`${i + 1}. ${item.name} - $${item.price} (${item.quantity})`);
+      }
+    }
+  
+    public checkout(): void {
+      const total = this.calculateTotal();
+      console.log(`Total: $${total}`);
+      console.log("Processing payment...");
+      // Additional logic for payment processing and order fulfillment would go here
+      console.log("Payment processed successfully. Thank you for your purchase!");
+    }
+  }
+  
+  interface CartItem {
+    name: string;
+    price: number;
+    quantity: number;
+  }
+  
+  const cart = new ShoppingCart();
+  cart.addItem("Shirt", 20, 2);
+  cart.addItem("Jeans", 50, 1);
+  cart.displayItems();
+  cart.removeItem(1);
+  cart.displayItems();
+  cart.checkout();
