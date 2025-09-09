@@ -1,0 +1,6 @@
+System:
+Filter section component
+Design a filter section component that can be reused in order to "apply" filters on certain pages. The section represents groups of filter items in the form of inputs.
+The filter uses a grid system to place different filter items next to each other until the "width" of the screen is filled and then the items break on separate lines.
+In addition at the end of each line (always right aligned) there are two buttons - "Reset filter" and "Load Data". You can find a visual example in the zip file.
+For the sake of simplicity use only input of type text.

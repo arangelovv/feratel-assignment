@@ -1,11 +1,10 @@
 import { Component } from "@angular/core";
+import { ExamplePageComponent } from "./features/example-page/example-page.component";
 
 @Component({
   selector: "app-root",
-  imports: [],
+  imports: [ExamplePageComponent],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
 })
-export class AppComponent {
-  title = "ng-assignment";
-}
+export class AppComponent {}

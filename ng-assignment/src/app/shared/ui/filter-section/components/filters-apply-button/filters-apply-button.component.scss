@@ -1,0 +1,18 @@
+.apply-button {
+  background-color: oklch(62.3% 0.214 259.815);
+  box-shadow: none;
+  border: none;
+  padding: 10px 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+
+  &:hover {
+    background-color: oklch(62.3% 0.214 259.815 / 0.9);
+  }
+}

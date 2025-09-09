@@ -1,0 +1,7 @@
+<div class="example-page-container">
+  <app-filter-section (resetFilter)="onReset()" (loadFilter)="onApply()">
+    <app-filter-item lable="filter 1" [formControl]="exampleControl1"></app-filter-item>
+    <app-filter-item lable="filter 2" [formControl]="exampleControl2"></app-filter-item>
+    <app-filter-item lable="filter 3" [formControl]="exampleControl3"></app-filter-item>
+  </app-filter-section>
+</div>

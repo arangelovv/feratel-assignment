@@ -1,0 +1,19 @@
+.reset-button {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+  padding: 10px 12px 10px 12px;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  color: black;
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  gap: 4px;
+
+  &:hover {
+    color: oklch(37.3% 0.034 259.733);
+  }
+}

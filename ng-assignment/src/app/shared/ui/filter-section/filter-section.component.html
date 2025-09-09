@@ -1,0 +1,10 @@
+<div class="filter-section">
+  <div class="filters-group">
+    <ng-content select="app-filter-item"></ng-content>
+  </div>
+
+  <div class="filters-actions">
+    <app-filters-reset-button (click)="resetFilter.emit()"></app-filters-reset-button>
+    <app-filters-apply-button (click)="loadFilter.emit()"></app-filters-apply-button>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.filter-item-container {
+  min-width: 180px;
+  width: 100%;
+  position: relative;
+
+  .filter-item {
+    appearance: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #9f9fa9;
+    border-radius: 6px;
+    background-color: transparent;
+  }
+
+  .filter-label {
+    position: absolute;
+    left: 10px;
+    transform: translateY(-50%);
+    background: #f4f4f5;
+    color: #71717b;
+    padding: 0 2px;
+    font-size: 12px;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
